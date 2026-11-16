@@ -1,0 +1,26 @@
+{
+  "name": "lp-guia-primeiro-imovel",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Landing page de captura do Guia do Primeiro Imóvel (projeto conceitual), feita com React e Vite.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && vite build --ssr src/entry-server.jsx --outDir .ssr-build && node scripts/prerender.mjs",
+    "preview": "vite preview",
+    "test": "vitest run"
+  },
+  "engines": {
+    "node": ">=20.19"
+  },
+  "dependencies": {
+    "lucide-react": "1.73.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "6.3.0",
+    "vite": "8.3.8",
+    "vitest": "5.1.0"
+  }
+}
